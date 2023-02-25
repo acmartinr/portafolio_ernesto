@@ -21,14 +21,6 @@ const Projects = () => {
             {Projects.subtitle}
           </h4>
           <br />
-        </div>
-        <div className="flex items-center lg:flex-row flex-col-reverse gap-5">
-          <img
-            src={Projects.image}
-            alt="..."
-            data-aos="fade-right"
-            className="max-w-[45vw] min-w-[22rem]"
-          />
           <Swiper
             pagination={{
               clickable: true,
@@ -53,6 +45,25 @@ const Projects = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+        <div className="flex items-center lg:flex-row flex-col-reverse gap-5">
+          <img
+            src={Projects.image}
+            alt="..."
+            data-aos="fade-right"
+            className="max-w-[50vw] min-w-[22rem]"
+          />
+          <div className="items-center">
+          <h2 className="title" data-aos="fade-down">
+            {Projects.downloadTitle}
+          </h2>
+          <p>
+          {Projects.downloadDescription}
+          </p>
+          <div className="flex justify-center">
+            <button className="btn"><a download href={Projects.cv}>{Projects.downloadTitle}</a></button>
+          </div>
+          </div>
         </div>
       </div>
     </section>

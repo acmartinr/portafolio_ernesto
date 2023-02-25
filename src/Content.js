@@ -11,22 +11,26 @@ import aps from "./assets/images/Skills/aps.png";
 import axd from "./assets/images/Skills/axd.png";
 import c4d from "./assets/images/Skills/c4d.png";
 
-import services_logo1 from "./assets/images/Services/logo1.png";
-import services_logo2 from "./assets/images/Services/logo2.png";
-import services_logo3 from "./assets/images/Services/logo3.png";
+import brand from "./assets/images/Services/branddesign.png";
+import models from "./assets/images/Services/3dmodel.png";
+import edit from "./assets/images/Services/editdesign.png";
+import ilustration from "./assets/images/Services/ilustration.png";
+import photoedition from "./assets/images/Services/photoedition.png";
+import uidesign from "./assets/images/Services/uidesign.png";
 
 import project1 from "./assets/images/Skills/ae.png";
 import project2 from "./assets/images/Skills/ae.png";
 import project3 from "./assets/images/Skills/ae.png";
-import person_project from "./assets/images/Skills/ae.png";
+import person_project from "./assets/images/Projects/projexts_person.png";
 
-import avatar1 from "./assets/images/Testimonials/avatar1.png";
-import avatar2 from "./assets/images/Testimonials/avatar2.png";
-import avatar3 from "./assets/images/Testimonials/avatar3.png";
-import avatar4 from "./assets/images/Testimonials/avatar4.png";
+import esterio from "./assets/images/Testimonials/esterio.png";
+import martin from "./assets/images/Testimonials/martin.png";
 
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
+
+var cv = "http://localhost:5173/src/assets/cv/cv.pdf";
+//var cv = "https://portafolio-ernesto.vercel.app/src/assets/cv/cv.pdf"; //prod
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
@@ -130,28 +134,47 @@ export const content = {
     icon: MdArrowForward,
   },
   services: {
-    title: "Services",
-    subtitle: "WHAT I OFFER",
+    title: "Servicios",
+    subtitle: "Lo que puedo hacer",
     service_content: [
       {
-        title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo1,
+        title: "Diseño de marca",
+        para: "Experiencia en el Diseño de marca y todo lo relacionado al branding y el marketing.",
+        logo: brand,
       },
       {
-        title: "ui / ux DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo2,
+        title: "Ilustración",
+        para: "Experiencia en el mundo del cartel y la ilustración, donde he obtenido reconocimientos en varios concursos.",
+        logo: ilustration,
       },
       {
-        title: "PhotoShop Editing",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo3,
+        title: "Diseño Editorial",
+        para: "Diseño de libros, revistas, periódicos, folletos, carteles publicitarios y tarjetas de presentación.",
+        logo: edit,
       },
+      {
+        title: "Diseño UI / UX",
+        para: "Experiencia en el diseño de interfaz y experiencia del usuario. (Diseño Web, software y aplicaciones móviles).",
+        logo: uidesign,
+      },
+      {
+        title: "Edición de fotos",
+        para: "Experiencia en la edición fotográfica, y en el montaje e ilustración de imágenes fotográficas.",
+        logo: photoedition,
+      },
+      {
+        title: "Modelado en 3D",
+        para: "He incursionado en el modelado en 3D, principalmente para artistas.",
+        logo: models,
+      }
     ],
   },
   Projects: {
+    cv:cv,
     title: "Projects",
+    downloadTitle:"Descarga mi portafolio",
+    downloadDescription:"Toda clase de soluciones gráficas a sus necesidades como cliente.",
+    downloadButtonTxt:"Descargar PDF",
     subtitle: "MY CREATION",
     image: person_project,
     project_content: [
@@ -170,33 +193,21 @@ export const content = {
     ],
   },
   Testimonials: {
-    title: "Testimonials",
-    subtitle: "MY CLIENT REVIEWS",
+    title: "Testimonios",
+    subtitle: "Opiniones de mis clientes",
     testimonials_content: [
       {
         review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar1,
-        name: "JOHN DOE",
+          "“Trabajé con Ernesto por más dos años. Como artista visual, puedo afirmar que domina una amplia gamma del Diseño Gráfico. En la esfera bidimensional y tridimensional.”",
+        img: esterio,
+        name: "Esterio segura mora (artista visual)",
       },
       {
         review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar2,
-        name: "Tom Alex",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar3,
-        name: "Johnny",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar4,
-        name: "ROBBIN",
-      },
+          "“Trabajé con Ernesto por más dos años. Como artista visual, puedo afirmar que domina una amplia gamma del Diseño Gráfico. En la esfera bidimensional y tridimensional.”",
+        img: martin,
+        name: "Alberto Martín (Ingeniero de Software)",
+      }
     ],
   },
   Hireme: {
